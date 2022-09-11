@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="nauka-html.html">Nauka html</a>
+            <a href="tutorial.html">Tutorial</a>
+        </nav>
+    </header>
+    <main>
+        <header id="top">
+            NOTATKI PROGRAMOWANIE
+        </header>
+        <section>
+            <h1>1. HTML</h1>
+            <article>
+                <h2>1.1. Tworzenie pliku</h2>
+                <p>*Zaczynamy od stworzenia pliku o nazwie index.html</p>
+                <p>*W pliku zaczynamy od "!TAB" który tworzy nam skielet strony</p>
+                <p>*Należy zmienić wartość parametru lang na pl jeśli tworzymy w języku polskim</p>
+                <p>*Wszystkie elemnty wpisuję w body aby było widoczne na stronie</p>
+                <p>*kolejnym krokiem jest wpisanie całość w "main"</p>
+                <p>*Następnie dzielimy tekst na sekcje</p>
+                <p>*Ostatnim krokiem jest walidacja np na za pomocą stron</p>
+            </article>
+
+            <article>
+                <h2>1.2. Przydatne komendy lub skróty</h2>
+                <p>"main" - główna część dokumetu - od niej zaczynamy</p>
+                <p>"section" - sekcje w dokumetu</p>
+                <p>"article" - mniejsze części dokumentu w danej sekcji</p>
+                <p>"header" - nagłówek</p>
+                <p>"footer" - stopka</p>
+                <p>"h1-h6" - tekstowe nagłówki danej części dokumentu</p>
+                <p>"p" - paragraf akapit</p>
+                <p>"crtl+shift+p" - wpisuję w konsoli format dokument - dzięki temu program porządkuje kod</p>
+                <p>"shift+alt+f" - porządkuje dokument</p>
+            </article>
+
+            <article>
+                <h2>1.3. Kolejne komendy</h2>
+                <p>"br" - przejście do nowej linii (jest to znacznik samozamykający się "br/"</p>
+                <p>"b" - pogrubienie tekstu bez semantyki</p>
+                <p>"strong" - pogrubienie tekstu</p>
+                <p>"i" - kursywa, pochylenie teskstu, bez semantyki</p>
+                <p>"em" - kursywa, pochylenie tekstu (np.ironia)</p>
+                <p>"a" - link lub łącze wewnątrz dokumentu<br />konstrukcja "a href="target"opis łącza"/a"<br />W
+                    przypadku gdy chcemy przejść do elementu w tym samym dokumencie musimi nadać mu id<br />aby wywołać
+                    element po id używam #</p>
+                <p>"element id="moj_identyfikator" - nadanie id elementowi</p>
+                <p>"nav" - przenosi do postron wewnątrz dokumenut - sekcja strony przeznaczona do nawigacji<br />warto stowrzyć stopkę i nagłówek poza mainem
+                    żęby był identyczny na krzdej podstronie<br />konstrukcja to "nav" w środku konstrukcja jak dla a "/nav"</p>
+                <p>"img src="nazwa" alt="opis zdjęcia(nazwa)" - umieszczenie zdjęcia w dokumencie</p>
+                <p>"znacznik class="name""treść"znacznik" definiujemy klasę w celu nadania stylu w css</p>
+            </article>
+
+            <article>
+                <h2>1.4. Metody z których nie zaleca się korzystać</h2>
+                <p>style inline - styl przy znaczniku<br/>składnia - "znacznik style="color:jaki";treść"/znacznik"<br/>po średniku możemy nadawać kolejne atrybuty</p>
+            </article>
+        </section>
+        <section>
+            <h1>2. CSS</h1>
+            <article>
+                <h2>2.1. Tworzenie pliku</h2>
+                <p>*Pierwszym sposobem jest wpisanie komend w sekcji head po to aby nadać styl elementom ale aby tekst
+                    komend nie był widoczny na stronie przy użyciu komendy "style"</p>
+                <p>*Bardziej praktyczną metodą jest utworzenie oddzielnego pliku o nazwie "style.css" w którym wpiszemy
+                    wszystkie komendy</p>
+                <p>aby powiązać plik .html z .css należy w sekcji head wpisać komendę "link href="style.css"
+                    rel="stylesheet" type="text/css""</p>
+            </article>
+            <article>
+                <h2>2.2. Przydatne komendy</h2>
+                <p>*Ogólna konstrukcja: czego ma dotyczyć (np. p, h1 itp.) { komenda:parametr}</p>
+                <p>*"color" - ustala kolor danego elementu tekstu</p>
+                <p>*"background" - ustala kolor tła</p>
+                <p>*"#cccccc" - jeśli chciałbym wybrać kolor z listy</p>
+            </article>
+            
+            <article>
+                <h2>2.3. Kolejne komendy</h2>
+                <p>".name" - wywołanie po nadanej klasie w {} wskazuję właściwości</p>
+                <p>"#name" - wywołanie po nadanym id w {} wskazuję właściwości</p>
+                <p>"nav a" - w tym przypadku nadaję włąściwość w {} wszystkim linkom w sekcji nawigacyjnej - bo nav to nawigacja a to linki</p>              
+            </article>
+            <article>
+                <h2>2.4. Nazewnictwo klas</h2>
+                <p>- używać pojedynczych słów z j. angielskiego<br/>- nazywać zgodnie z funkcją na stronie<br/>- mała litera<br/>- nie zaczynać od cyfr<br/>- kebabe case słowo-słowo<br/></p>            
+            </article>
+        </section>
+        <section>
+            <h1>3. Java Script</h1>
+        </section>
+
+        <section>
+            <h1>4. Specyficzność</h1>
+            <article>
+                <h2>4.1. Ważność narzędzi stylowania</h2>
+                <p>!important - nad wszystkim</p>
+                <p>stylowanie inline</p>
+                <p>#name - po id</p>
+                <p>.name - po klasie</p>
+                <p>element</p>
+                <p>jeśli wartość jest równa styl bliżej elementu wygrywa czyli styl niżej w kodzie, bo css jest wstawiany na samej góze html w head</p>
+                <p>zalecenia - najlepiej dodawać klasy do wszystkich elementów i nie dodawwać zagnieżdżeń w css - nazewnictwo przepisać ze slajdów</p>
+            </article>
+
+            
+    
+
+        </section>
+    </main>
+    <footer>Strona by Mateusz Mróz</footer>
+</body>
+
+</html>

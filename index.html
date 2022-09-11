@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="nauka-html.html">Nauka html</a>
+            <a href="tutorial.html">Tutorial</a>
+        </nav>
+    </header>
+    <main>
+        <header id="top">
+            NOTATKI PROGRAMOWANIE
+        </header>
+        <section>
+            <h1>1. HTML</h1>
+            <article>
+                <h2 class="hotpink-header">1.1. Tworzenie pliku</h2>
+                <p>*Zaczynamy od stworzenia pliku o nazwie index.html</p>
+                <p>*W pliku zaczynamy od "!TAB" który tworzy nam skielet strony</p>
+                <p>*Należy zmienić wartość parametru lang na pl jeśli tworzymy w języku polskim</p>
+                <p>*Wszystkie elemnty wpisuję w body aby było widoczne na stronie</p>
+                <p>*kolejnym krokiem jest wpisanie całość w "main"</p>
+                <p>*Następnie dzielimy tekst na sekcje</p>
+                <p>*Ostatnim krokiem jest walidacja np na zomocą stron</p>
+            </article>
+
+            <article>
+                <h2>1.2. Przydatne komendy lub skróty</h2>
+                <p>"main" - główna część dokumetu - od niej zaczynamy</p>
+                <p>"section" - sekcje w dokumetu</p>
+                <p>"article" - mniejsze części dokumentu w danej sekcji</p>
+                <p>"header" - nagłówek</p>
+                <p>"footer" - stopka</p>
+                <p>"h1-h6" - tekstowe nagłówki danej części dokumentu</p>
+                <p>"p" - paragraf akapit</p>
+                <p>"crtl+shift+p" - wpisuję w konsoli format dokument - dzięki temu program porządkuje kod</p>
+                <p>"shift+alt+f" - porządkuje dokument</p>
+            </article>
+        </section>
+        <section>
+            <h1>2. CSS</h1>
+            <article>
+                <h2>2.1. Tworzenie pliku</h2>
+                <p>*Pierwszym sposobem jest wpisanie komend w sekcji head po to aby nadać styl elementom ale aby tekst
+                    komend nie był widoczny na stronie przy użyciu komendy "style"</p>
+                <p>*Bardziej praktyczną metodą jest utworzenie oddzielnego pliku o nazwie "style.css" w którym wpiszemy
+                    wszystkie komendy</p>
+                <p>aby powiązać plik .html z .css należy w sekcji head wpisać komendę "link href="style.css"
+                    rel="stylesheet" type="text/css""</p>
+            </article>
+            <article>
+                <h2>2.2. Przydatne komendy</h2>
+                <p>*Ogólna konstrukcja: czego ma dotyczyć (np. p, h1 itp.) { komenda:parametr}</p>
+                <p>*"color" - ustala kolor danego elementu tekstu</p>
+                <p>*"background" - ustala kolor tła</p>
+                <p>*"#cccccc" - jeśli chciałbym wybrać kolor z listy</p>
+            </article>
+        </section>
+
+        <section id="cwiczenia">
+            <h1 class="hotpink-header">4. Testowanie rzeczu</h1>
+            <article>
+                <h2>2.1. Tworzenie pliku</h2>
+                <p><a href="https://meczyki.pl">Strona z artykułami</a></p>
+                <p><a href=#cwiczenia>Przejdź do ćwiczeń</a></p>
+                <p><a href=#top>Przejdź na górę strony</a></p>
+            </article>
+
+        </section>
+    </main>
+    <footer>Strona by Mateusz Mróz</footer>
+</body>
+
+</html>

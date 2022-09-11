@@ -1,0 +1,28 @@
+body {
+    background: #5fff79;
+}
+
+article {
+    background: #c2fdd1;
+}
+
+.hotpink-header {
+    color: hotpink;
+}
+
+#top {
+    color: azure;
+    background: #093f7c6e;
+}
+
+a {
+    color: orange;
+}
+
+nav a {
+    color: azure;
+}
+
+.naglowek-po-klasie {
+    color: pink;
+}
